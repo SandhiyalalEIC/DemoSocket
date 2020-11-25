@@ -1,0 +1,6 @@
+module Pods_SoftAponboarding {
+  umbrella header "Pods-SoftAponboarding-umbrella.h"
+
+  export *
+  module * { export * }
+}

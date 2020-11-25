@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62AE4D25272F5F1056A306BE /* libPods-SoftAponboarding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C1B0D5F68750B962A7A19B /* libPods-SoftAponboarding.a */; };
+		84B004E0256E747D0044BD4E /* SoftAponboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B004D6256E747D0044BD4E /* SoftAponboarding.framework */; };
+		84B004E5256E747D0044BD4E /* SoftAponboardingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B004E4256E747D0044BD4E /* SoftAponboardingTests.swift */; };
+		84B004E7256E747D0044BD4E /* SoftAponboarding.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B004D9256E747D0044BD4E /* SoftAponboarding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84B00517256E75710044BD4E /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B004FB256E75700044BD4E /* ErrorMessage.swift */; };
+		84B00518256E75710044BD4E /* DeviceAccessPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B004FC256E75700044BD4E /* DeviceAccessPoint.swift */; };
+		84B00519256E75710044BD4E /* SoftAPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B004FD256E75700044BD4E /* SoftAPSocket.swift */; };
+		84B0051A256E75710044BD4E /* DeviceConnectionInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B004FE256E75700044BD4E /* DeviceConnectionInteraction.swift */; };
+		84B0051B256E75710044BD4E /* EncryptionKeyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B004FF256E75700044BD4E /* EncryptionKeyFactory.swift */; };
+		84B0051C256E75710044BD4E /* DefaultNetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00500256E75700044BD4E /* DefaultNetworkMonitor.swift */; };
+		84B0051D256E75710044BD4E /* WiFiNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00501256E75700044BD4E /* WiFiNetwork.swift */; };
+		84B0051E256E75710044BD4E /* RegisterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00502256E75700044BD4E /* RegisterStatus.swift */; };
+		84B0051F256E75710044BD4E /* SoftApMessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00503256E75700044BD4E /* SoftApMessageComposer.swift */; };
+		84B00520256E75710044BD4E /* ExecutableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00504256E75700044BD4E /* ExecutableCommand.swift */; };
+		84B00521256E75710044BD4E /* SoftApSocketEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00505256E75700044BD4E /* SoftApSocketEvent.swift */; };
+		84B00522256E75710044BD4E /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00506256E75700044BD4E /* Encryptor.swift */; };
+		84B00523256E75710044BD4E /* LocationPermissionMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00507256E75700044BD4E /* LocationPermissionMonitor.swift */; };
+		84B00524256E75710044BD4E /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00508256E75700044BD4E /* NetworkMonitor.swift */; };
+		84B00525256E75710044BD4E /* EncryptableMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00509256E75700044BD4E /* EncryptableMessage.swift */; };
+		84B00526256E75710044BD4E /* ArloOnboardingDeviceInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0050A256E75700044BD4E /* ArloOnboardingDeviceInteraction.swift */; };
+		84B00527256E75710044BD4E /* WirelessNetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0050B256E75700044BD4E /* WirelessNetworkMonitor.swift */; };
+		84B00528256E75710044BD4E /* SocketInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0050C256E75710044BD4E /* SocketInteraction.swift */; };
+		84B00529256E75710044BD4E /* MessageEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0050D256E75710044BD4E /* MessageEncryptor.swift */; };
+		84B0052A256E75710044BD4E /* ArloDeviceConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0050E256E75710044BD4E /* ArloDeviceConnection.swift */; };
+		84B0052B256E75710044BD4E /* ClaimStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0050F256E75710044BD4E /* ClaimStatus.swift */; };
+		84B0052C256E75710044BD4E /* ConnectivityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00510256E75710044BD4E /* ConnectivityStatus.swift */; };
+		84B0052D256E75710044BD4E /* OnboardingEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00511256E75710044BD4E /* OnboardingEncryptor.swift */; };
+		84B0052E256E75710044BD4E /* SoftAPSocketInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00512256E75710044BD4E /* SoftAPSocketInteraction.swift */; };
+		84B0052F256E75710044BD4E /* DeviceAccessPointConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00513256E75710044BD4E /* DeviceAccessPointConnector.swift */; };
+		84B00530256E75710044BD4E /* ConnectionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00514256E75710044BD4E /* ConnectionCommand.swift */; };
+		84B00531256E75710044BD4E /* WiFiNetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00515256E75710044BD4E /* WiFiNetworkMonitor.swift */; };
+		84B00532256E75710044BD4E /* HotspotConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B00516256E75710044BD4E /* HotspotConfigurationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84B004E1256E747D0044BD4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B004CD256E747D0044BD4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B004D5256E747D0044BD4E;
+			remoteInfo = SoftAponboarding;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C1B0D5F68750B962A7A19B /* libPods-SoftAponboarding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoftAponboarding.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		322FBC25C1EDCFA20BD53AFF /* Pods-SoftAponboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftAponboarding.release.xcconfig"; path = "Target Support Files/Pods-SoftAponboarding/Pods-SoftAponboarding.release.xcconfig"; sourceTree = "<group>"; };
+		52C4EA3B0A44961D5FA7FED4 /* Pods-SoftAponboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftAponboarding.debug.xcconfig"; path = "Target Support Files/Pods-SoftAponboarding/Pods-SoftAponboarding.debug.xcconfig"; sourceTree = "<group>"; };
+		84B004D6256E747D0044BD4E /* SoftAponboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SoftAponboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B004D9256E747D0044BD4E /* SoftAponboarding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoftAponboarding.h; sourceTree = "<group>"; };
+		84B004DA256E747D0044BD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B004DF256E747D0044BD4E /* SoftAponboardingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftAponboardingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B004E4256E747D0044BD4E /* SoftAponboardingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftAponboardingTests.swift; sourceTree = "<group>"; };
+		84B004E6256E747D0044BD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B004FB256E75700044BD4E /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		84B004FC256E75700044BD4E /* DeviceAccessPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceAccessPoint.swift; sourceTree = "<group>"; };
+		84B004FD256E75700044BD4E /* SoftAPSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftAPSocket.swift; sourceTree = "<group>"; };
+		84B004FE256E75700044BD4E /* DeviceConnectionInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceConnectionInteraction.swift; sourceTree = "<group>"; };
+		84B004FF256E75700044BD4E /* EncryptionKeyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionKeyFactory.swift; sourceTree = "<group>"; };
+		84B00500256E75700044BD4E /* DefaultNetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNetworkMonitor.swift; sourceTree = "<group>"; };
+		84B00501256E75700044BD4E /* WiFiNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiFiNetwork.swift; sourceTree = "<group>"; };
+		84B00502256E75700044BD4E /* RegisterStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterStatus.swift; sourceTree = "<group>"; };
+		84B00503256E75700044BD4E /* SoftApMessageComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftApMessageComposer.swift; sourceTree = "<group>"; };
+		84B00504256E75700044BD4E /* ExecutableCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutableCommand.swift; sourceTree = "<group>"; };
+		84B00505256E75700044BD4E /* SoftApSocketEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftApSocketEvent.swift; sourceTree = "<group>"; };
+		84B00506256E75700044BD4E /* Encryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryptor.swift; sourceTree = "<group>"; };
+		84B00507256E75700044BD4E /* LocationPermissionMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPermissionMonitor.swift; sourceTree = "<group>"; };
+		84B00508256E75700044BD4E /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		84B00509256E75700044BD4E /* EncryptableMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptableMessage.swift; sourceTree = "<group>"; };
+		84B0050A256E75700044BD4E /* ArloOnboardingDeviceInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArloOnboardingDeviceInteraction.swift; sourceTree = "<group>"; };
+		84B0050B256E75700044BD4E /* WirelessNetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WirelessNetworkMonitor.swift; sourceTree = "<group>"; };
+		84B0050C256E75710044BD4E /* SocketInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketInteraction.swift; sourceTree = "<group>"; };
+		84B0050D256E75710044BD4E /* MessageEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEncryptor.swift; sourceTree = "<group>"; };
+		84B0050E256E75710044BD4E /* ArloDeviceConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArloDeviceConnection.swift; sourceTree = "<group>"; };
+		84B0050F256E75710044BD4E /* ClaimStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimStatus.swift; sourceTree = "<group>"; };
+		84B00510256E75710044BD4E /* ConnectivityStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityStatus.swift; sourceTree = "<group>"; };
+		84B00511256E75710044BD4E /* OnboardingEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingEncryptor.swift; sourceTree = "<group>"; };
+		84B00512256E75710044BD4E /* SoftAPSocketInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftAPSocketInteraction.swift; sourceTree = "<group>"; };
+		84B00513256E75710044BD4E /* DeviceAccessPointConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceAccessPointConnector.swift; sourceTree = "<group>"; };
+		84B00514256E75710044BD4E /* ConnectionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCommand.swift; sourceTree = "<group>"; };
+		84B00515256E75710044BD4E /* WiFiNetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiFiNetworkMonitor.swift; sourceTree = "<group>"; };
+		84B00516256E75710044BD4E /* HotspotConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotConfigurationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B004D3256E747D0044BD4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62AE4D25272F5F1056A306BE /* libPods-SoftAponboarding.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B004DC256E747D0044BD4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B004E0256E747D0044BD4E /* SoftAponboarding.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CC047AFFDA436B148DCB9FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02C1B0D5F68750B962A7A19B /* libPods-SoftAponboarding.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84B004CC256E747D0044BD4E = {
+			isa = PBXGroup;
+			children = (
+				84B004D8256E747D0044BD4E /* SoftAponboarding */,
+				84B004E3256E747D0044BD4E /* SoftAponboardingTests */,
+				84B004D7256E747D0044BD4E /* Products */,
+				EAF82641445ED56C688100F6 /* Pods */,
+				1CC047AFFDA436B148DCB9FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84B004D7256E747D0044BD4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B004D6256E747D0044BD4E /* SoftAponboarding.framework */,
+				84B004DF256E747D0044BD4E /* SoftAponboardingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B004D8256E747D0044BD4E /* SoftAponboarding */ = {
+			isa = PBXGroup;
+			children = (
+				84B0050E256E75710044BD4E /* ArloDeviceConnection.swift */,
+				84B0050A256E75700044BD4E /* ArloOnboardingDeviceInteraction.swift */,
+				84B0050F256E75710044BD4E /* ClaimStatus.swift */,
+				84B00514256E75710044BD4E /* ConnectionCommand.swift */,
+				84B00510256E75710044BD4E /* ConnectivityStatus.swift */,
+				84B00500256E75700044BD4E /* DefaultNetworkMonitor.swift */,
+				84B004FC256E75700044BD4E /* DeviceAccessPoint.swift */,
+				84B00513256E75710044BD4E /* DeviceAccessPointConnector.swift */,
+				84B004FE256E75700044BD4E /* DeviceConnectionInteraction.swift */,
+				84B00509256E75700044BD4E /* EncryptableMessage.swift */,
+				84B004FF256E75700044BD4E /* EncryptionKeyFactory.swift */,
+				84B00506256E75700044BD4E /* Encryptor.swift */,
+				84B004FB256E75700044BD4E /* ErrorMessage.swift */,
+				84B00504256E75700044BD4E /* ExecutableCommand.swift */,
+				84B00516256E75710044BD4E /* HotspotConfigurationManager.swift */,
+				84B00507256E75700044BD4E /* LocationPermissionMonitor.swift */,
+				84B0050D256E75710044BD4E /* MessageEncryptor.swift */,
+				84B00508256E75700044BD4E /* NetworkMonitor.swift */,
+				84B00511256E75710044BD4E /* OnboardingEncryptor.swift */,
+				84B00502256E75700044BD4E /* RegisterStatus.swift */,
+				84B0050C256E75710044BD4E /* SocketInteraction.swift */,
+				84B00503256E75700044BD4E /* SoftApMessageComposer.swift */,
+				84B004FD256E75700044BD4E /* SoftAPSocket.swift */,
+				84B00505256E75700044BD4E /* SoftApSocketEvent.swift */,
+				84B00512256E75710044BD4E /* SoftAPSocketInteraction.swift */,
+				84B00501256E75700044BD4E /* WiFiNetwork.swift */,
+				84B00515256E75710044BD4E /* WiFiNetworkMonitor.swift */,
+				84B0050B256E75700044BD4E /* WirelessNetworkMonitor.swift */,
+				84B004D9256E747D0044BD4E /* SoftAponboarding.h */,
+				84B004DA256E747D0044BD4E /* Info.plist */,
+			);
+			path = SoftAponboarding;
+			sourceTree = "<group>";
+		};
+		84B004E3256E747D0044BD4E /* SoftAponboardingTests */ = {
+			isa = PBXGroup;
+			children = (
+				84B004E4256E747D0044BD4E /* SoftAponboardingTests.swift */,
+				84B004E6256E747D0044BD4E /* Info.plist */,
+			);
+			path = SoftAponboardingTests;
+			sourceTree = "<group>";
+		};
+		EAF82641445ED56C688100F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52C4EA3B0A44961D5FA7FED4 /* Pods-SoftAponboarding.debug.xcconfig */,
+				322FBC25C1EDCFA20BD53AFF /* Pods-SoftAponboarding.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		84B004D1256E747D0044BD4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B004E7256E747D0044BD4E /* SoftAponboarding.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		84B004D5256E747D0044BD4E /* SoftAponboarding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B004EA256E747D0044BD4E /* Build configuration list for PBXNativeTarget "SoftAponboarding" */;
+			buildPhases = (
+				85A2F1A8B69BBB03B9A42962 /* [CP] Check Pods Manifest.lock */,
+				84B004D1256E747D0044BD4E /* Headers */,
+				84B004D2256E747D0044BD4E /* Sources */,
+				84B004D3256E747D0044BD4E /* Frameworks */,
+				84B004D4256E747D0044BD4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoftAponboarding;
+			productName = SoftAponboarding;
+			productReference = 84B004D6256E747D0044BD4E /* SoftAponboarding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84B004DE256E747D0044BD4E /* SoftAponboardingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B004ED256E747D0044BD4E /* Build configuration list for PBXNativeTarget "SoftAponboardingTests" */;
+			buildPhases = (
+				84B004DB256E747D0044BD4E /* Sources */,
+				84B004DC256E747D0044BD4E /* Frameworks */,
+				84B004DD256E747D0044BD4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84B004E2256E747D0044BD4E /* PBXTargetDependency */,
+			);
+			name = SoftAponboardingTests;
+			productName = SoftAponboardingTests;
+			productReference = 84B004DF256E747D0044BD4E /* SoftAponboardingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B004CD256E747D0044BD4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					84B004D5256E747D0044BD4E = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+					};
+					84B004DE256E747D0044BD4E = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 84B004D0256E747D0044BD4E /* Build configuration list for PBXProject "SoftAponboarding" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84B004CC256E747D0044BD4E;
+			productRefGroup = 84B004D7256E747D0044BD4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B004D5256E747D0044BD4E /* SoftAponboarding */,
+				84B004DE256E747D0044BD4E /* SoftAponboardingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84B004D4256E747D0044BD4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B004DD256E747D0044BD4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85A2F1A8B69BBB03B9A42962 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoftAponboarding-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B004D2256E747D0044BD4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B0052C256E75710044BD4E /* ConnectivityStatus.swift in Sources */,
+				84B0051E256E75710044BD4E /* RegisterStatus.swift in Sources */,
+				84B00526256E75710044BD4E /* ArloOnboardingDeviceInteraction.swift in Sources */,
+				84B0051D256E75710044BD4E /* WiFiNetwork.swift in Sources */,
+				84B0052A256E75710044BD4E /* ArloDeviceConnection.swift in Sources */,
+				84B00523256E75710044BD4E /* LocationPermissionMonitor.swift in Sources */,
+				84B0051F256E75710044BD4E /* SoftApMessageComposer.swift in Sources */,
+				84B00528256E75710044BD4E /* SocketInteraction.swift in Sources */,
+				84B00531256E75710044BD4E /* WiFiNetworkMonitor.swift in Sources */,
+				84B00520256E75710044BD4E /* ExecutableCommand.swift in Sources */,
+				84B00522256E75710044BD4E /* Encryptor.swift in Sources */,
+				84B00529256E75710044BD4E /* MessageEncryptor.swift in Sources */,
+				84B0051A256E75710044BD4E /* DeviceConnectionInteraction.swift in Sources */,
+				84B0051B256E75710044BD4E /* EncryptionKeyFactory.swift in Sources */,
+				84B00521256E75710044BD4E /* SoftApSocketEvent.swift in Sources */,
+				84B00518256E75710044BD4E /* DeviceAccessPoint.swift in Sources */,
+				84B00532256E75710044BD4E /* HotspotConfigurationManager.swift in Sources */,
+				84B00530256E75710044BD4E /* ConnectionCommand.swift in Sources */,
+				84B0051C256E75710044BD4E /* DefaultNetworkMonitor.swift in Sources */,
+				84B0052B256E75710044BD4E /* ClaimStatus.swift in Sources */,
+				84B00519256E75710044BD4E /* SoftAPSocket.swift in Sources */,
+				84B00525256E75710044BD4E /* EncryptableMessage.swift in Sources */,
+				84B0052F256E75710044BD4E /* DeviceAccessPointConnector.swift in Sources */,
+				84B0052D256E75710044BD4E /* OnboardingEncryptor.swift in Sources */,
+				84B00517256E75710044BD4E /* ErrorMessage.swift in Sources */,
+				84B00527256E75710044BD4E /* WirelessNetworkMonitor.swift in Sources */,
+				84B0052E256E75710044BD4E /* SoftAPSocketInteraction.swift in Sources */,
+				84B00524256E75710044BD4E /* NetworkMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B004DB256E747D0044BD4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B004E5256E747D0044BD4E /* SoftAponboardingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84B004E2256E747D0044BD4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B004D5256E747D0044BD4E /* SoftAponboarding */;
+			targetProxy = 84B004E1256E747D0044BD4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84B004E8256E747D0044BD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84B004E9256E747D0044BD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84B004EB256E747D0044BD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C4EA3B0A44961D5FA7FED4 /* Pods-SoftAponboarding.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 65GLRX55BA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SoftAponboarding/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.einfochips.SoftAponboarding;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84B004EC256E747D0044BD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 322FBC25C1EDCFA20BD53AFF /* Pods-SoftAponboarding.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 65GLRX55BA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SoftAponboarding/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.einfochips.SoftAponboarding;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84B004EE256E747D0044BD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65GLRX55BA;
+				INFOPLIST_FILE = SoftAponboardingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.einfochips.SoftAponboardingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84B004EF256E747D0044BD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65GLRX55BA;
+				INFOPLIST_FILE = SoftAponboardingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.einfochips.SoftAponboardingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B004D0256E747D0044BD4E /* Build configuration list for PBXProject "SoftAponboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B004E8256E747D0044BD4E /* Debug */,
+				84B004E9256E747D0044BD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B004EA256E747D0044BD4E /* Build configuration list for PBXNativeTarget "SoftAponboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B004EB256E747D0044BD4E /* Debug */,
+				84B004EC256E747D0044BD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B004ED256E747D0044BD4E /* Build configuration list for PBXNativeTarget "SoftAponboardingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B004EE256E747D0044BD4E /* Debug */,
+				84B004EF256E747D0044BD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84B004CD256E747D0044BD4E /* Project object */;
+}
